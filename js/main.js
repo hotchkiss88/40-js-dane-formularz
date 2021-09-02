@@ -7,24 +7,20 @@ let objectSurname = document.getElementById("surname");
 let objectPhone = document.getElementById("phone");
 let objectKnop = document.getElementById("knop");
 
-objectKnop.onclick = function() {
+objectKnop.onclick = function myF() {
 
     if (objectOne.value.length > 0) {
         objectName.textContent = objectOne.value;
-        return objectName;
     }
-
     if (objectTwo.value.length > 0) {
         objectSurname.textContent = objectTwo.value;
-        return objectSurname;
     }
-
     if (objectOne.value.length > 0) {
         objectName.textContent = objectOne.value;
-        return objectName;
     }
     if (objectThree.value.length > 0) {
         objectPhone.textContent = objectThree.value;
-        return objectPhone;
     }
+
+    return myF;
 }
